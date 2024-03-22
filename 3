@@ -1,0 +1,14 @@
+#include<iostream>
+#include<math.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	double a, b, x, q, e, r, y,w;
+	a = 0.124; b = 1.14; x = 2.125;
+	q = 2 * sqrt((fabs(log(x - a)))/(a+b*x));
+	w = sin(fabs(log10((x-b) / atan(x))));
+	e = pow(w, 1.0/5.0);
+	y = pow((q-e), 1.0/3.0);
+	cout <<fixed<<setprecision(2)<< y;
+}
